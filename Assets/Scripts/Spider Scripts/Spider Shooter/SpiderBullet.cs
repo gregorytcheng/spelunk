@@ -5,7 +5,7 @@ using UnityEngine;
 public class SpiderBullet : MonoBehaviour
 {
 
-    private void OnTriggerEnter(Collider2D target)
+    private void OnTriggerEnter2D(Collider2D target)
     {
         //if the bullet hits the player
         if (target.tag == "Player")
