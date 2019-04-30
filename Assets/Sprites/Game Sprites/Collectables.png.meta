@@ -2,9 +2,9 @@ fileFormatVersion: 2
 guid: 431e97f01dbba4540a0ad81c504cc8d3
 TextureImporter:
   fileIDToRecycleName:
-    21300000: blue_diamond
-    21300002: yellow_diamond
-    21300004: purple_diamond
+    21300000: Collectables_0
+    21300002: Collectables_1
+    21300004: Collectables_2
     21300006: timer_collectable
     21300008: air_collectable
   externalObjects: {}
@@ -111,7 +111,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: blue_diamond
+      name: Collectables_0
       rect:
         serializedVersion: 2
         x: 15
@@ -119,7 +119,7 @@ TextureImporter:
         width: 170
         height: 155
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -131,7 +131,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: yellow_diamond
+      name: Collectables_1
       rect:
         serializedVersion: 2
         x: 199
@@ -139,7 +139,7 @@ TextureImporter:
         width: 170
         height: 155
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -151,7 +151,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: purple_diamond
+      name: Collectables_2
       rect:
         serializedVersion: 2
         x: 383
@@ -159,7 +159,7 @@ TextureImporter:
         width: 170
         height: 155
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -179,7 +179,7 @@ TextureImporter:
         width: 168
         height: 170
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -199,7 +199,7 @@ TextureImporter:
         width: 175
         height: 170
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
