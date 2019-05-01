@@ -9,7 +9,7 @@ public class DiamondScript : MonoBehaviour
     {
         if (Door.instance != null)
         {
-            Door.instance.collectablesCount++;            
+            Door.instance.collectablesCount++;
         }
     }
 
@@ -21,7 +21,6 @@ public class DiamondScript : MonoBehaviour
             if (Door.instance != null)
             {
                 Door.instance.DecrementCollectables();
-
             }
         }
     }

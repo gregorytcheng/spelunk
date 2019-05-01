@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class TimerAndAir : MonoBehaviour
 {
-
     void OnTriggerEnter2D(Collider2D target)
     {
         if (target.tag == "Player")
@@ -17,9 +16,8 @@ public class TimerAndAir : MonoBehaviour
             {
                 GameObject.Find("Gameplay Controller").GetComponent<LevelTimer>().time += 2f;
             }
-            
+
             Destroy(gameObject);
-            
         }
     }
 }

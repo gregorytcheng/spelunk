@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
-
     private Transform player;
 
     public float minX, maxX;
+
+    public float minY, maxY;
 
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.Find("Player").transform;
-        
     }
 
     // Update is called once per frame
@@ -21,10 +21,11 @@ public class CameraFollow : MonoBehaviour
     {
         if (player != null)
         {
-
             Vector3 temp = transform.position;
 
             temp.x = player.position.x;
+            temp.y = player.position.y + 3.1f;
+
 
             if (temp.x < minX)
             {
@@ -35,11 +36,19 @@ public class CameraFollow : MonoBehaviour
             {
                 temp.x = maxX;
             }
-            
-            temp.y = player.position.y + 3.1f;
+
+            if (temp.y < minY)
+            {
+                temp.y = minY;
+            }
+
+            if (temp.y > maxY)
+            {
+                temp.y = maxY;
+            }
+
 
             transform.position = temp;
-
         }
     }
 }

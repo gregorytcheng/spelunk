@@ -12,7 +12,7 @@ public class LevelTimer : MonoBehaviour
     private float timeBurn = 1f;
 
     public float time = 10f;
-    
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -36,7 +36,6 @@ public class LevelTimer : MonoBehaviour
         {
             Destroy(player);
         }
-        
     }
 
     void getReferences()

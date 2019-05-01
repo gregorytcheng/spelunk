@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class LevelController : MonoBehaviour
 {
-
     public void PlayGame()
     {
         Application.LoadLevel("Gameplay");
@@ -14,5 +13,4 @@ public class LevelController : MonoBehaviour
     {
         Application.LoadLevel("MainMenu");
     }
-    
 }

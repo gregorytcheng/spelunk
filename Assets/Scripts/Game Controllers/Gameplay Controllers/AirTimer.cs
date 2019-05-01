@@ -1,5 +1,4 @@
-﻿
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
@@ -7,7 +6,6 @@ using UnityEngine;
 
 public class AirTimer : MonoBehaviour
 {
-
     private Slider slider;
 
     private GameObject player;
@@ -15,7 +13,7 @@ public class AirTimer : MonoBehaviour
     private float airBurn = 1f;
 
     public float air = 10f;
-    
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -39,7 +37,6 @@ public class AirTimer : MonoBehaviour
         {
             Destroy(player);
         }
-        
     }
 
     void getReferences()
@@ -51,6 +48,4 @@ public class AirTimer : MonoBehaviour
         slider.maxValue = air;
         slider.value = slider.maxValue; // starting with the maximum value
     }
-    
-    
 }
