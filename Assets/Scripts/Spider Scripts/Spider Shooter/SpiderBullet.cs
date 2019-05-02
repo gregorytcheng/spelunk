@@ -12,12 +12,15 @@ public class SpiderBullet : MonoBehaviour
         {
             Destroy(target.gameObject);
             Destroy(gameObject);
+            GameObject.Find("Gameplay Controller").GetComponent<GameplayController>().PlayerDied();
+
         }
 
         //if the bullet hits the ground
         if (target.tag == "Ground")
         {
            Destroy(gameObject); 
+
         }
     }
     

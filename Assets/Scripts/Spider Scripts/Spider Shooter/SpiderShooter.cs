@@ -13,6 +13,8 @@ public class SpiderShooter : MonoBehaviour
         if (target.tag == "Player")
         {
             Destroy(target.gameObject);
+            GameObject.Find("Gameplay Controller").GetComponent<GameplayController>().PlayerDied();
+
         }
     }
 
@@ -32,10 +34,5 @@ public class SpiderShooter : MonoBehaviour
     {
         StartCoroutine(Attack());
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 }
