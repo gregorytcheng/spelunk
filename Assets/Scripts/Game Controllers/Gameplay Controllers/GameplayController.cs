@@ -28,7 +28,7 @@ public class GameplayController : MonoBehaviour
     public void ResartGame()
     {
         Time.timeScale = 1f;
-        Application.LoadLevel("Gameplay");
+        Application.LoadLevel("MainMenu");
     }
 
     public void PlayerDied()
