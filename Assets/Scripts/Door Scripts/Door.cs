@@ -10,7 +10,7 @@ public class Door : MonoBehaviour
     private BoxCollider2D box;
 
     private Animator anim;
-
+    
     [HideInInspector]
     public int collectablesCount;
 
@@ -41,7 +41,8 @@ public class Door : MonoBehaviour
     
     IEnumerator OpenDoor()
     {
-        anim.Play("Open");
+        anim.SetBool("open", true);
+//        anim.Play("Open");
         yield return new WaitForSeconds(7f);
         box.isTrigger = true;
     }
@@ -50,7 +51,7 @@ public class Door : MonoBehaviour
     {
         if (target.tag == "Player")
         {
-            Debug.Log("Game finished");
+            GameObject.Find("Gameplay Controller").GetComponent<GameplayController>().PlayerDied();
         }
     }
 }
