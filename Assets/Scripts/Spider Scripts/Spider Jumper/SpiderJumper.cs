@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SpiderJumper : MonoBehaviour
 {
-    public float forceY = 300f;
+    public float forceY;
     
     private Rigidbody2D myBody;
     private Animator anim;
@@ -25,7 +25,7 @@ public class SpiderJumper : MonoBehaviour
     {
         yield return new WaitForSeconds(Random.Range(2, 7));
 
-        forceY = Random.Range(250f, 550f);
+        forceY = Random.Range(250f, 750f);
 
         myBody.AddForce(new Vector2(0, forceY));
         anim.SetBool("Attack", true);

@@ -21,6 +21,11 @@ public class SpiderWalker : MonoBehaviour
 
     void FixedUpdate()
     {
+        collision = Physics2D.Linecast(startPos.position, endPos.position, 1 << LayerMask.NameToLayer("Ground"));
+        if (!collision)
+        {
+            ChangeDirection();
+        }
         Move();
         ChangeDirection();
     }
