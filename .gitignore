@@ -1,7 +1,6 @@
 /[Ll]ibrary/
 /[Tt]emp/
 /[Oo]bj/
-/[Bb]uild/
 /[Bb]uilds/
 
 # Exclude 3rd party libraries installed from the assets store
